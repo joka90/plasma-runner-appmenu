@@ -1,0 +1,9 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Contact: joka90@gmail.com
+Upstream-Name: plasma-runner-appmenu
+Source: https://github.com/joka90/plasma-runner-appmenu/
+
+Files: *
+Copyright: 2021-2022, Artur Gaspar <artur.gaspar.00@gmail.com>
+           2021-2022, Johan Källström <joka90@gmail.com>
+License: Public Domain

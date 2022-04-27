@@ -1,0 +1,19 @@
+Source: plasma-runner-appmenu
+Section: kde
+Priority: optional
+Maintainer: Johan Källström <joka90@gmail.com>
+Uploaders: Johan Källström <joka90@gmail.com>,
+Build-Depends: dh-python,
+               debhelper-compat (= 13),
+               python3-xlib,
+               python3-dbus,
+Standards-Version: 4.6.0
+Homepage: https://github.com/joka90/plasma-runner-appmenu/
+Vcs-Browser: https://github.com/joka90/plasma-runner-appmenu/
+Vcs-Git: https://github.com/joka90/plasma-runner-appmenu.git
+Rules-Requires-Root: no
+
+Package: plasma-runner-appmenu
+Architecture: all
+Depends: python3-xlib, python3-dbus, ${python:Depends}, ${misc:Depends}
+Description: Krunner to search AppMenu

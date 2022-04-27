@@ -1,0 +1,3 @@
+plasma-runner-krunner_appmenu /usr/lib/libexec/kf5/
+plasma-runner-krunner_appmenu.desktop /usr/share/krunner/dbusplugins/
+org.krunner_appmenu.service /usr/share/dbus-1/services/

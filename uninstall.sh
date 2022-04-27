@@ -1,8 +1,8 @@
-#!/bin/sh
+#!/bin/bash
 
-set -eu
+# Exit if something fails
+set -e
 
 rm ~/.local/share/kservices5/plasma-runner-krunner_appmenu.desktop
-rm ~/.config/autostart/krunner_appmenu_autostart.desktop
-
+rm ~/.local/share/dbus-1/services/org.krunner_appmenu.service
 kquitapp5 krunner

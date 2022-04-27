@@ -1,0 +1,4 @@
+[D-BUS Service]
+Name=org.krunner_appmenu
+Exec=/usr/lib/libexec/kf5/plasma-runner-krunner_appmenu
+# SystemdService=plasma-baloorunner.service

@@ -1,15 +1,11 @@
-#!/bin/sh
+#!/bin/bash
+# Exit if something fails
+set -e
 
-set -eu
-
-mkdir -p ~/.config/autostart/
 mkdir -p ~/.local/share/kservices5/
+mkdir -p ~/.local/share/dbus-1/services/
 
 cp plasma-runner-krunner_appmenu.desktop ~/.local/share/kservices5/
-sed "s|@PROJECTDIR@|${PWD}|" krunner_appmenu_autostart.desktop.in > ~/.config/autostart/krunner_appmenu_autostart.desktop
-
-chmod +x ./krunner_appmenu.py
-
-nohup ./krunner_appmenu.py >/dev/null 2>&1 &
+sed -E "s|Exec=.*\$|Exec=${PWD}/plasma-runner-krunner_appmenu|" "org.krunner_appmenu.service" > ~/.local/share/dbus-1/services/org.krunner_appmenu.service
 
 kquitapp5 krunner
